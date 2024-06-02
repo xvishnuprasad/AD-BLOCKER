@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Enzo AD Blocker",
+    "version": "1.0.0",
+    "description": "Enzo Hub",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        },
+        "default_title": "Enzo Ad Blocker"
+    },
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    }
+}
